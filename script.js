@@ -1,4 +1,4 @@
-// Mock data for test
+// Mock data for tes
 const teams = [
     { name: 'Team 1', placement: 2, kills: 20, wins: 2, matchesPlayed: 5 },
     { name: 'Team 2', placement: 1, kills: 24, wins: 1, matchesPlayed: 5 },
