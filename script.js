@@ -1,9 +1,4 @@
 // Function to generate a generic point table
-const teams = [
-    { name: 'Team A', placement: 1, kills: 20, wins: 3, matchesPlayed: 5 },
-    { name: 'Team B', placement: 5, kills: 15, wins: 1, matchesPlayed: 5 },
-    // Add more teams as needed
-];
 function generateTable(containerId, teams) {
     const pointTable = document.getElementById(containerId);
     pointTable.innerHTML = '';
@@ -68,14 +63,22 @@ function generateTable(containerId, teams) {
 
 // Function to generate the point table for top 12 teams
 function generateTop12Table() {
-    const sortedTeamsTop12 = teams.sort(sortTeams).slice(0, 12);
-    generateTable('pointTableTop12', sortedTeamsTop12);
+    const teamsTop12 = [
+        { name: 'Team 1', placement: 1, kills: 20, wins: 3, matchesPlayed: 5 },
+        { name: 'Team 2', placement: 5, kills: 15, wins: 1, matchesPlayed: 5 },
+        // ... Add more teams as needed
+    ];
+    generateTable('pointTableTop12', teamsTop12);
 }
 
 // Function to generate the point table for bottom 12 teams
 function generateBottom12Table() {
-    const sortedTeamsBottom12 = teams.sort(sortTeams).slice(12);
-    generateTable('pointTableBottom12', sortedTeamsBottom12);
+    const teamsBottom12 = [
+        { name: 'Team 13', placement: 13, kills: 10, wins: 2, matchesPlayed: 5 },
+        { name: 'Team 14', placement: 18, kills: 8, wins: 0, matchesPlayed: 5 },
+        // ... Add more teams as needed
+    ];
+    generateTable('pointTableBottom12', teamsBottom12);
 }
 
 // Call the functions to generate the initial point tables
