@@ -8,9 +8,31 @@
     <style>
         /* Add any additional styling here */
 
+        body {
+            background-image: url('bg.JPG'); /* Replace 'bg.JPG' with your actual image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .table-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .table {
+            margin: 10px;
+            max-width: 400px; /* Adjust the max-width as needed */
+            width: 100%;
+        }
+
         table {
             border-collapse: collapse;
             width: 100%;
+            margin-bottom: 10px;
         }
 
         td, th {
@@ -35,8 +57,17 @@
         }
     </style>
 </head>
-<body background="bg.JPG">
-    <div id="pointTable"></div>
+<body>
+    <div class="table-container">
+        <div class="table">
+            <h2>Top 12 Teams</h2>
+            <div id="pointTableTop12"></div>
+        </div>
+        <div class="table">
+            <h2>Bottom 12 Teams</h2>
+            <div id="pointTableBottom12"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
