@@ -28,7 +28,7 @@ function generatePointTable() {
 
     const teamElement = document.createElement('div');
     teamElement.classList.add('team');
-    teamElement.style.backgroundImage = `url('path/to/your/pp.jpg')`; // Adjust the path to your single image (pp.jpg)
+    teamElement.style.backgroundImage = `url('pp.jpg')`; // Adjust the path to your single image (pp.jpg)
     pointTable.appendChild(teamElement);
 
     sortedTeams.forEach((team, index) => {
