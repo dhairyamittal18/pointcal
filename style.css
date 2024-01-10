@@ -1,27 +1,27 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8; /* Set background color */
+/* Add any additional styling here */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-#pointTable {
-    display: flex;
-    flex-wrap: wrap; /* Enable wrapping for smaller screens */
-    justify-content: space-between;
-    padding: 20px;
+td, th {
+    padding: 8px;
+    text-align: left;
 }
 
-.team {
-    width: 48%; /* Adjust width for proper spacing */
-    background-color: #fff; /* Set team background color */
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
-    background-size: cover;
+tr {
+    background-color: white; /* Set background color for rows */
 }
 
-.team:nth-child(odd) {
-    background-color: #f2f2f2; /* Alternate background color */
+tr:hover {
+    background-color: #f5f5f5; /* Change background color on hover if needed */
+}
+
+td:nth-child(7) { /* Assuming Total Points is the 7th column, adjust if needed */
+    background-color: #f2f2f2; /* Set background color for Total Points column */
+}
+
+th, td {
+    border: none; /* Remove borders */
 }
