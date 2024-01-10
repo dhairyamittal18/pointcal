@@ -1,4 +1,4 @@
-// Function to generate a generic point table
+// Function togenerate a generic point table
 function generateTable(containerId, teams) {
     const pointTable = document.getElementById(containerId);
     pointTable.innerHTML = '';
