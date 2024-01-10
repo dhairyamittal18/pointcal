@@ -1,7 +1,7 @@
 // Mock data for testing
 const teams = [
     { name: 'Team 1', placement: 2, kills: 20, wins: 2, matchesPlayed: 5 },
-    { name: 'Team 2', placement: 1, kills: 25, wins: 1, matchesPlayed: 5 },
+    { name: 'Team 2', placement: 1, kills: 24, wins: 1, matchesPlayed: 5 },
     // ... add more teams
 ];
 
