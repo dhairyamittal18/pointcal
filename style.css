@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Set background color */
+}
+
+#pointTable {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.team {
+    width: 48%; /* Adjust width for proper spacing */
+    background-color: #fff; /* Set team background color */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+    background-size: cover;
+}
+
+.team:nth-child(odd) {
+    background-color: #f2f2f2; /* Alternate background color */
+}
