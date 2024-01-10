@@ -1,4 +1,9 @@
 // Function to generate a generic point table
+const teams = [
+    { name: 'Team A', placement: 1, kills: 20, wins: 3, matchesPlayed: 5 },
+    { name: 'Team B', placement: 5, kills: 15, wins: 1, matchesPlayed: 5 },
+    // Add more teams as needed
+];
 function generateTable(containerId, teams) {
     const pointTable = document.getElementById(containerId);
     pointTable.innerHTML = '';
